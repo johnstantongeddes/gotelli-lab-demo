@@ -10,6 +10,9 @@ summary(cars)
 
 lm1 <- lm(speed ~ dist, data=cars)
 anova(lm1)
+
+lm2 <- lm(speed ~ dist + I(dist^2), data=cars)
+anova(lm2)
 ```
 
 You can also embed plots, for example:

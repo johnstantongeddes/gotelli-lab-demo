@@ -37,6 +37,24 @@ anova(lm1)
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ```
 
+```r
+
+lm2 <- lm(speed ~ dist + I(dist^2), data = cars)
+anova(lm2)
+```
+
+```
+## Analysis of Variance Table
+## 
+## Response: speed
+##           Df Sum Sq Mean Sq F value  Pr(>F)    
+## dist       1    892     892  105.57 1.3e-13 ***
+## I(dist^2)  1     81      81    9.58  0.0033 ** 
+## Residuals 47    397       8                    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
 
 You can also embed plots, for example:
 
