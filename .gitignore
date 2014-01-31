@@ -1,0 +1,7 @@
+# ignore these files
+.Rproj.user
+.Rhistory
+.RData
+
+*.Rproj
+*.html
