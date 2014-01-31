@@ -20,6 +20,23 @@ summary(cars)
 ##  Max.   :25.0   Max.   :120
 ```
 
+```r
+
+lm1 <- lm(speed ~ dist, data = cars)
+anova(lm1)
+```
+
+```
+## Analysis of Variance Table
+## 
+## Response: speed
+##           Df Sum Sq Mean Sq F value  Pr(>F)    
+## dist       1    892     892    89.6 1.5e-12 ***
+## Residuals 48    478      10                    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
 
 You can also embed plots, for example:
 
@@ -28,6 +45,12 @@ You can also embed plots, for example:
 plot(cars)
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-21.png) 
+
+```r
+plot(lm1)
+```
+
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-22.png) ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-23.png) ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-24.png) ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-25.png) 
 
 
